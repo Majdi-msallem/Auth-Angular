@@ -1,0 +1,21 @@
+<div 
+*ngIf="userService.roleMatch(['d_rh'])"
+style="background-color: red;">
+    <h1>d_rh</h1>
+</div>
+<div 
+*ngIf="userService.roleMatch(['rh'])"
+
+style="background-color: blue;">
+    <h1>rh</h1>
+</div>
+<div 
+*ngIf="userService.roleMatch(['tech'])"
+style="background-color:green;">
+    <h1>tech</h1>
+</div>
+<div>
+    <button 
+    (click)="logout()"
+    type="button" class="btn btn-danger center">Logout</button>
+</div>
